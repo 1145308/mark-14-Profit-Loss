@@ -13,13 +13,13 @@ function calculateProfitAndLoss(initial , quantity , current)
         //loss
        var loss=(initial-current)*quantity;
        var lossPercentage = (loss/initial)*100
-       showOutput("Hey, the loss 😢 is : " + loss + " and the loss percentage is : " + lossPercentage.toFixed(2) +"%");
+       showOutput("Hey, the loss is : " + loss + " and the loss percentage is : " + lossPercentage.toFixed(2) +"%");
     }
     else if( current > initial){
         //gain
        var gain=(current-initial)*quantity;
        var gainPercentage = (gain/initial)*100
-       showOutput("Hey, the gain 🥳 is : " + gain + " and the gain percentage is : " + gainPercentage.toFixed(2) +"%");
+       showOutput("Hey, the gain is : " + gain + " and the gain percentage is : " + gainPercentage.toFixed(2) +"%");
     }
     else {
         showOutput("No pain No gain ! and No gain No Pain !");
